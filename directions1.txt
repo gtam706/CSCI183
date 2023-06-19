@@ -1,0 +1,100 @@
+PYTHON BASICS:
+
+Q1. Write a Python program to print the number and sum of prime numbers which are less than or equal to a given number. [5 points]
+
+Q2. Write a Python program to find the largest product of the pair of adjacent elements from a given list of integers. [5 points]
+
+Q3. Given a password, we have to categorize it as valid or invalid. There are some checks that need to be met to be a valid password. For a invalid password, we need to return the reason for it to be invalid. [10 points]
+
+Conditions for a valid password are:
+
+Should have at least one number.
+Should have at least one uppercase and one lowercase character.
+Should have at least one special symbol.
+Should be between 6 to 20 characters long.
+Q4. Given a password, we have to categorize it as a strong or weak one. There are some checks that need to be met to be a strong password. For a weak password, we need to return the reason for it to be weak. [10 points]
+
+Conditions to be fulfilled for strong password are:
+
+Minimum 9 characters and maximum 20 characters.
+Cannot be a newline or a space
+There should not be three or more repeating characters in a row.
+The same string pattern(minimum of two character length) should not be repeated.
+PYTHON FOR DATA SCIENCE:
+
+Q1. Write Python code to read in all the columns (as a DataFrame) of the file cities.csv Download cities.csv. Print the content of the columns and also the shape of the dataframe [4 Points] 
+
+Q2. Create a subset of the DataFrame from Q1 in the following way: [6 points]
+
+DataFrame Subset 1: Contains columns LatD,LonD,LatM,LonM and all the rows of the original DataFrame 
+DataFrame Subset 2: Contains all columns but only first 100 rows of the original DataFrame 
+DataFrame Subset 3: Contains 2nd, 3rd and 4th column of the original DataFrame and first 10 rows 
+Q3. Write a Python code to read specific columns (LatD,LonD and City) and (LatM, LonM and State) of a CSV file (cities.csv Download cities.csv) and print the content of the columns. Also print the 'type' of data in each of the columns  [5 points]
+
+Q4. Write a Python code to write a Python list of lists (list_of_list.pkl Download list_of_list.pkl) to a csv file. After writing the CSV file, read the CSV file and display the content. [10 points]
+
+[Hint - Use pickle to import the .pkl file
+
+with open("list_of_list.pkl", "rb") as fp:   
+
+   b = pickle.load(fp)
+
+]
+
+Q5. Write a Python program to convert a Python DataFrame to a dictionary object.  [5 points]
+
+Contents of the DataFrame:
+
+    C1  C2  C3
+
+R1   1   2   3
+
+R2   4   5   6
+
+R3   7   8   9
+
+DataFrame as a dictionary:
+
+{'C1': {'R1': 1, 'R2': 4, 'R3': 7}, 'C2': {'R1': 2, 'R2': 5, 'R3': 8}, 'C3': {'R1': 3, 'R2': 6, 'R3': 9}}
+
+Q6. You are given a text file containing a string of words and you need to write a function to find words with a certain number of characters in the given text file. The length of the word will be the parameter of the function and will be given by the user. Remove duplicate words from the final list. [HINT - Take a look at split(), lower(), open() and input() functions in python] 
+
+[USE Data Science.txt Download Data Science.txt] [10 points]
+
+EX - The length of the word will be the parameter of the function and will be given by the user.
+
+The length of word provided by user - 4
+Output - 
+
+word
+
+will
+
+User
+
+The length of word provided by user - 3
+Output - 
+
+The
+
+and
+
+[“The” and “the” are the same]
+
+REGULAR EXPRESSIONS
+
+Q1. Write a Python program that matches a word containing 'z', not at the start or end of the word. [5 points]
+
+Q2. You are given a list of courses of a student: [5 points]
+
+CSCI 10
+
+MATH 9
+
+MATH 11
+
+CSCI 60
+
+CSCI 182
+
+Write a python program that helps you to find the CSCI courses that the student has taken. Need to find the code and number. 
